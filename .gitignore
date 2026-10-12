@@ -1,0 +1,10 @@
+# Photos uploaded through the admin panel (keep the folder and its protection file)
+/uploads/*
+!/uploads/.htaccess
+
+# Editor and system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+~$*.docx

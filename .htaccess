@@ -1,0 +1,5 @@
+# Do not list folder contents, and keep the SQL file and notes private
+Options -Indexes
+<FilesMatch "\.(sql|md)$">
+    Require all denied
+</FilesMatch>

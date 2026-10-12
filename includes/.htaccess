@@ -1,0 +1,2 @@
+# These files are loaded by PHP only and must not be opened in a browser
+Require all denied
