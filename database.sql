@@ -369,6 +369,31 @@ INSERT INTO reviews (user_id, destination_id, rating, comment, status) VALUES
 (3, 2, 4, 'A beautiful place for a family picnic. Go early to avoid the weekend crowd.', 'approved'),
 (3, 5, 5, 'Our guide explained the history so well. Every Liberian should visit at least once.', 'approved');
 
+-- ---------- Sample photographs (Wikimedia Commons, credited on credits.php) ----------
+UPDATE destinations SET image = 'assets/images/photos/sapo.jpg'              WHERE id = 1;
+UPDATE destinations SET image = 'assets/images/photos/kpatawee.jpg'          WHERE id = 2;
+UPDATE destinations SET image = 'assets/images/photos/robertsport.jpg'       WHERE id = 3;
+UPDATE destinations SET image = 'assets/images/photos/lake-piso.jpg'         WHERE id = 4;
+UPDATE destinations SET image = 'assets/images/photos/providence-island.jpg' WHERE id = 5;
+UPDATE destinations SET image = 'assets/images/photos/nimba.jpg'             WHERE id = 6;
+UPDATE destinations SET image = 'assets/images/photos/monkey-island.jpg'     WHERE id = 8;
+UPDATE destinations SET image = 'assets/images/photos/national-museum.jpg'   WHERE id = 10;
+UPDATE destinations SET image = 'assets/images/photos/harper.jpg'            WHERE id = 11;
+UPDATE destinations SET image = 'assets/images/photos/ducor-hill.jpg'        WHERE id = 12;
+-- The hotels are sample entries, so these show scenery of the area, not the hotel
+UPDATE hotels SET image = 'assets/images/photos/mesurado-river.jpg'   WHERE id = 1;
+UPDATE hotels SET image = 'assets/images/photos/robertsport-surf.jpg' WHERE id = 2;
+UPDATE hotels SET image = 'assets/images/photos/marshall-coast.jpg'   WHERE id = 3;
+UPDATE hotels SET image = 'assets/images/photos/nimba-highlands.jpg'  WHERE id = 4;
+UPDATE hotels SET image = 'assets/images/photos/forest-road.jpg'      WHERE id = 5;
+-- Tour packages reuse the photo of their main destination
+UPDATE packages SET image = 'assets/images/photos/providence-island.jpg' WHERE id = 1;
+UPDATE packages SET image = 'assets/images/photos/robertsport-surf.jpg'  WHERE id = 2;
+UPDATE packages SET image = 'assets/images/photos/sapo.jpg'              WHERE id = 3;
+UPDATE packages SET image = 'assets/images/photos/kpatawee.jpg'          WHERE id = 4;
+UPDATE packages SET image = 'assets/images/photos/nimba-highlands.jpg'   WHERE id = 5;
+UPDATE packages SET image = 'assets/images/photos/monkey-island.jpg'     WHERE id = 6;
+
 -- ---------- Navigation links (editable by the admin) ----------
 INSERT INTO menu_links (label, url, location, sort_order) VALUES
 ('Home',          'index.php',              'header', 1),
@@ -389,7 +414,8 @@ INSERT INTO menu_links (label, url, location, sort_order) VALUES
 ('Frequently Asked Questions', 'page.php?slug=faq', 'footer', 3),
 ('Terms and Conditions', 'page.php?slug=terms', 'footer', 4),
 ('Privacy Policy',     'page.php?slug=privacy', 'footer', 5),
-('Contact Us',         'contact.php',           'footer', 6);
+('Contact Us',         'contact.php',           'footer', 6),
+('Photo Credits',      'credits.php',           'footer', 7);
 
 -- ---------- Pages (editable by the admin) ----------
 -- Formatting: blank line = new paragraph, "## " = heading, "- " = bullet point

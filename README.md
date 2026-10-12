@@ -54,7 +54,7 @@ Change these passwords before showing the system to anyone outside the project t
 - **Pages**: About, Travel Information, FAQ, Terms, Privacy, plus any new page.
 - **Tourism data**: destinations, counties, hotels, packages, guides, events, with photos.
 
-When no photo has been uploaded, a coloured placeholder with the name is shown.
+Sample photographs from Wikimedia Commons are included in `assets/images/photos/` and credited on the Photo Credits page (`credits.php`). When an item has no photo, a coloured placeholder with the name is shown.
 
 ## 4. Folder structure
 
@@ -124,6 +124,7 @@ Column details are in `database.sql`.
   prices and phone numbers are invented for demonstration. The exchange rate
   (1 USD = 190 LRD) is a placeholder: set the current rate under
   Admin > Home page and settings > General.
+- **Sample photos.** Destination photos are real photographs of those places, except Sapo National Park, which shows a pygmy hippopotamus photographed in a zoo. Hotel photos show scenery of the area, not the (invented) hotels. Blue Lake, Buchanan Beaches and Harper Heritage Inn have no photo. Keep the Photo Credits page if you keep these photos: their licences require the author to be named.
 - The site does not send email. Replies to enquiries are recorded in the admin panel.
 
 ## 8. Troubleshooting

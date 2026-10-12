@@ -331,3 +331,7 @@ td.actions form { display: inline; }
     .panel, .table-wrap, .tile { box-shadow: none; border: 1px solid #ccc; }
     .admin-main { margin: 0 !important; padding: 0 !important; }
 }
+
+/* Photo credits page */
+.credit-thumb { width: 110px; height: 76px; object-fit: cover; border-radius: 8px; padding: 0; }
+.credit-thumb.media-ph span { display: none; }
